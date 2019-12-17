@@ -5,6 +5,14 @@ const abi = require('../public/js/contractabi.json')
 const web3 = new Web3('https://ropsten.infura.io/v3/')
 
 const account = ''
+
+// const account = web3.eth.accounts[0];
+// console('account : ' + account);
+// web3.etth.getBalance(account, (error, balance) => {
+//    if (!error)
+//         console.log('getBalance:' + balance);
+// }
+
 const privateKey = Buffer.from('', 'hex')
 const contractAddress = '0x6e33bd4718812744414f8ff692f78ccea7f1cb1f'
 const contract = new web3.eth.Contract(abi, contractAddress)
